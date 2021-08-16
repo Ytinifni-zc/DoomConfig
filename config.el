@@ -25,7 +25,9 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;;
+(setq doom-theme 'doom-one-light)
+;;(setq doom-theme 'doom-city-lights)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -55,4 +57,16 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; (setq doom-theme 'doom-city-lights)
+(use-package! org-roam
+  :commands (org-roam-insert org-roam-find-file org-roam)
+  :init
+  (setq org-roam-directory "~/org/org-roam/")
+  (setq org-roam-graph-viewer "/usr/bin/open")
+  (map! :leader
+  :prefix "r"
+  :desc "Org-Roam-Insert" "i" #'org-roam-insert
+  :desc "Org-Roam-Find"   "/" #'org-roam-find-file
+  :desc "Org-Roam-Buffer" "r" #'org-roam)
+  :config
+  (org-roam-mode +1))
+(add-hook 'after-init-hook 'org-roam-mode)

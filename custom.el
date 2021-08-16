@@ -5,6 +5,9 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(fcitx exec-path-from-shell websocket org-roam-bibtex org-roam-server)))
+ '(custom-safe-themes
+   '("cebda623e3f9ecd4a4af08d92c406bc4517e323d9259d5156f43901860224e30" "22dadcc3e29840ef054c188b5cfe88c71c3bf77afc58d1c4ff9ab5dd3ef60e9b" default))
+ '(package-selected-packages '(zzz-to-char)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
