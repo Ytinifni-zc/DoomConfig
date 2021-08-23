@@ -50,3 +50,9 @@
 ;(unpin! t)
 
 (package! org-roam)
+(package! proxy-mode)
+(package! pdf-tools)
+(package! org-noter)
+(package! org-noter-pdftools)
+(package! org-pdftools)
+(package! popper)

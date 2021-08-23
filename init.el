@@ -197,6 +197,4 @@
        ;;literate
        (default +bindings +smartparens))
 
-;;(setq url-proxy-services '(("socks5" . "127.0.0.1:1080")))
-
-(setq org-roam-v2-ack t)
+(setq url-proxy-services '(("socks5" . "127.0.0.1:1080")))
