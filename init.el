@@ -14,10 +14,10 @@
 ;;      Alternatively, press 'gd' (or 'C-c c d') on a module to browse its
 ;;      directory (for easy access to its source code).
 
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
-(when (daemonp)
-  (exec-path-from-shell-initialize))
+;; (when (memq window-system '(mac ns x))
+;;   (exec-path-from-shell-initialize))
+;; (when (daemonp)
+;;   (exec-path-from-shell-initialize))
 
 
 (doom! :input
